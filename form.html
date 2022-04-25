@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML FORM</title>
+    <style>
+        div{
+            line-height: 1.5;
+        }
+        label{
+            color: darkcyan;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<hr>
+<!-- tag -->
+<!-- 
+action จะส่งไปฝั่ง server
+input = ช่องรับข้อความ
+select =
+option =
+button =
+label =
+textarea = คอมเม้น -->
+<body>
+    <h1 align="center">แบบฟอร์มลงทะเบียน</h1>
+    <form action="">
+        <div>
+            <label for="firstname">ชื่อจริง</label><br>
+            <input type="text"  name="firstname" placeholder="กรุณากรอกชื่อจริง" required>
+        </div>
+        <div>
+            <label for="lastname">นามสกุล</label><br>
+            <input type="text" name="lastname" placeholder="กรุณากรอกนามสกุล" required>
+        </div>
+        <div>
+            <label for="email">Email</label><br>
+            <input type="email" name="email" placeholder="กรุณากรอกอีเมลล์" required>
+        </div>
+        <div>
+            <label for="password">รหัสผ่าน</label><br>
+            <input type="password" name="password" placeholder="กรุณากรอกรหัสผ่าน" required>
+        </div>
+        <div>
+            <label for="address">ที่อยู่</label><br>
+            <textarea name="address" id="" cols="20" rows="5"></textarea>
+        </div>
+        <div>
+            <label for="age">อายุ</label><br>
+            <input type="number" name="age" mix="0" max="100" value="0" required>
+        </div>
+        <div>
+            <label for="birthdate">วันเกิด</label><br>
+            <input type="date" name="birthdate" required>
+        </div>
+        <div>
+            <label for="phoneNumber">เบอร์โทรศัพท์</label><br>
+            <input type="tel" name="phoneNumber" placeholder="กรุณากรอกเบอร์โทรศัพท์" required>
+        </div>
+        <div>
+            <label for="color">สีที่ชอบ</label><br>
+            <input type="color" name="color">
+        </div>
+        <div>
+            <label for="happy">ความสุข</label><br>
+            <input type="range" name="happyRange" value="0" minlength="0" maxlength="10">
+        </div>
+        <div>
+            <label for="educate">ระดับการศึกษา</label><br>
+            <select name="edu" id="">
+                <option value="มัธยม">มัธยม</option>
+                <option value="ปริญญาตรี" selected>ปริญญาตรี</option>
+                <option value="ปริญญโท">ปริญญาโท</option>
+            </select>
+        </div>
+        <div>
+            <label for="gender">เพศ</label><br>
+            <input type="radio" name="gender" id="">ชาย
+            <input type="radio" name="gender" id="">หญิง
+            <input type="radio" name="gender" id="">อื่นๆ
+            <!-- ถ้าไม่กำหนด name จะกดเลือกได้หลายอัน เพราะจะคิดว่าเป็นคนละกลุ่ม -->
+        </div>
+        <div>
+            <label for="like">ภาษา</label><br>
+            <input type="checkbox" name="language" id="">Python
+            <input type="checkbox" name="language" id="">R
+            <input type="checkbox" name="language">Dart
+        </div>
+        <div>
+            <label for="file">เอกสาร</label><br>
+            <input type="file">
+        </div>
+        <div>
+            <label for="website">website</label><br>
+            <input type="url" name="url" id="">
+        </div>
+        <div style="line-height: 2;">
+            <!-- <input type="submit" name="ยืนยัน" id=""> -->
+            <button type="submit">ยืนยัน</button>
+            <button type="reset">ล้างข้อมูล</button>
+        </div>
+    </form>
+</body>
+<a href="index.html">ย้อนหลัง</a>
+</html>
