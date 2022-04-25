@@ -15,21 +15,31 @@
     <!-- <td> กำหนดคอลัมน์ -->
     <!-- <th> กำหนดคอลัมน์ที่แสดงผลในส่วนหัวของตาราง -->
     <h1><mark>Table</mark></h1>
-    <table border="1">
-        <thead>
-            <th>ลำดับ</th>
-            <th>ภาพ</th>
-            <th>ชื่อ</th>
-            <th>ราคา</th>
+    <!-- Attribute table -->
+    <!-- border = ความหนา
+    width = %
+    bgcolor = สี
+    colspan = "x" รวมคอลัม  
+    rowspan = "x" รวมแถว
+    align="left,center,right"
+    Cellpadding แสดงข้อมูลในตาราง
+    Cellspacing กำหนดขนาดเส้นตาราง
+-->
+    <table border="1" bgcolor ="" width = "50%" cellpadding ="10" cellspacing="3">
+        <thead align="center">
+            <th bgcolor="#AED6F1">ลำดับ</th>
+            <th bgcolor="#AED6F1">ภาพ</th>
+            <th bgcolor="#AED6F1">ชื่อ</th>
+            <th bgcolor="#AED6F1">ราคา</th>
         </thead>
-        <tbody>
-            <tr>
+        <tbody align="center">
+            <tr align="center">
                 <td>D001</td>
                 <td><img src="image/dog.jpg" alt="" height="200" width="400"></td>
                 <td>dog</td>
                 <td>22000</td>
             </tr>
-            <tr>
+            <tr align="center">
                 <td>D002</td>
                 <td><img src="image/dog.jpg" alt="" height="200" width="400"></td>
                 <td>dog2</td>
@@ -44,7 +54,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <td>จำนวน: 3</td>
+                <td align ="right" colspan="4">จำนวน: 3</td>   
             </tr>
         </tfoot>
     </table>
